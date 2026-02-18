@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/media/logo.jpeg">
+    <title>SSB Training and Placement Pvt Ltd</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!--top header-->
+    <div class="bg-[#1c2328] px-4 py-3 top_header">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center">
+            <p class="text-sm text-white mb-2 sm:mb-0">
+                <span class="text-white font-thin">We Help You Grow Your Business</span>
+            </p>
+            <div class="flex gap-5 text-white text-sm">
+                <a href="#" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--navigation-->
+    <nav id="navbar" class="sticky top-0 left-0 w-full backdrop-blur-sm  z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <!--logo-->
+            <div class="flex items-center space-x-3 ">
+                <a href="index.html"><img src="assets/media/logo.jpeg" alt="Logo" class="h-20 w-auto" /></a>
+            </div>
+
+            <!--desktop nav-->
+            <div class="space-x-6 font-semibold uppercase text-sm custom-nav z-50">
+                <a href="index.html">Home</a>
+                <a href="about_us.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="events_news.html">Events & News</a>
+                <a href="apply_now.html">Apply Now</a>
+                <a href="blog.html">Blog</a>
+                <a href="courses.html" class="text-blue-500">Courses</a>
+                <a href="contact_us.html">Contact Us</a>
+            </div>
+
+            <!--hamburger button-->
+            <button id="menu-toggle" class="text-3xl text-black custom-hamburger z-50 relative">
+                <i id="menu-icon" class="fas fa-bars"></i>
+            </button>
+
+            <!--mobile menu (inside nav, just below button)-->
+            <div id="mobile-menu" class="absolute left-0 top-[100%] w-full bg-white text-black px-4 py-6 space-y-4 font-semibold uppercase text-sm text-center z-40 transition-all duration-200 ease-in-out transform scale-y-0 origin-top opacity-0 overflow-hidden">
+                <a href="index.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[20ms]">
+                    Home
+                </a>
+                <a href="about_us.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[40ms]">
+                    About Us
+                </a>
+                <a href="services.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[60ms]">
+                    Services
+                </a>
+                <a href="events_news.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[80ms]">
+                    Events & News
+                </a>
+                <a href="apply_now.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[100ms]">
+                    Apply Now
+                </a>
+                <a href="blog.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[120ms]">
+                    Blog
+                </a>
+                <a href="courses.html" class="block text-amber-500 transform opacity-0 -translate-y-4 transition duration-200 delay-[140ms]">
+                    Courses
+                </a>
+                <a href="contact_us.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[160ms]">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!--navigation background-->
+    <header class="relative relative-position h-screen w-full overflow-hidden" style="top:-104px">
+        
+        <!--background video-->
+        <img src="assets/media/courses.jpg" class="absolute top-0 left-0 w-full h-full object-cover opacity-90" >
+
+        <!--white transparent navbar-->
+        <div class="absolute inset-0 bg-black/50 z-0"></div>     
+
+        <!--content on image (right-aligned)-->
+        <div class="absolute inset-0 flex items-center justify-end px-6 md:px-20 z-10">
+            <div class="flex flex-col gap-4 p-6 max-w-xl text-white text-right">
+                <h1 class="text-2xl md:text-4xl font-extrabold">Learn Today’s Technologies. Lead Tomorrow’s Industry.</h1>
+                <p class="text-base md:text-md leading-relaxed text-justify">
+                   Explore SSB’s industry-focused training programs designed to build real-world, job-ready
+                    skills in Java Full Stack, Python, AI & ML, Web Development, Cloud, Cybersecurity, and more. Whether you're a beginner or a professional upgrading your skills, our expert mentors, real-time projects, and placement support help you stay competitive in today’s tech-driven industry.
+                </p>
+                <a href="#course-card" class=" self-end bg-blue-800 w-fit px-6 py-3 rounded-full text-white font-bold text-sm uppercase tracking-wider">
+                    Course Catalog
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!--courses section-->
+    <section class="bg-fixed bg-cover bg-center min-h-screen px-4 py-12 courses" id="course-card" style="background-image: url('assets/media/background_2.jpg');">
+        
+        <div class="p-6 rounded-xl max-w-7xl mx-auto mt-20">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Card 1 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/1-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Ethical Hacking and Security Analyst
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        Ethical hacking and security analysis involve proactively assessing and fortifying digital systems against potential threats. Ethical hackers simulate attacks to identify vulnerabilities, while security analysts analyze and mitigate risks, ensuring the integrity and resilience of systems while adhering to ethical guidelines and legal standards.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/python.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/2-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Web Vulnerability Assessment and Penetration Testing
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        Web vulnerability assessment identifies vulnerabilities, while penetration testing actively exploits them to gauge their severity and potential impact. Together, they form a comprehensive approach to securing web applications and systems by uncovering and addressing weaknesses before they can be exploited by attackers.
+                        </p>
+
+                        <!-- Buttons -->
+                       <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/3-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Android Vulnerability Assessment and Penetration Testing
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        Android VAPT stands for Android Application Vulnerability Assessment and Penetration Testing, which involves assessing the security of Android applications. This process includes identifying and mitigating vulnerabilities in Android apps, ensuring they are secure against potential threats and attacks.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/4-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        iOS Vulnerability Assessment and Penetration Testing
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        iOS VAPT refers to iOS Application Vulnerability Assessment and Penetration Testing, which involves evaluating the security of iOS applications. This process includes identifying and mitigating vulnerabilities in iOS apps, ensuring they are resilient against potential security risks and threats.
+                        </p>
+
+                        <!-- Buttons -->
+                       <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/5-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        API Vulnerability Assessment and Penetration Testing
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        API VAPT, or API Vulnerability Assessment and Penetration Testing, evaluates the security of Application Programming Interfaces (APIs). This involves identifying and mitigating vulnerabilities in API endpoints to protect against potential threats and unauthorized access.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/6-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Router Vulnerability Assessment and Penetration Testing
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        Router VAPT evaluates the security of network routers, identifying and mitigating vulnerabilities in configurations, firmware, and access controls to ensure resilience against security threats.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/7-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Network Vulnerability Assessment and Penetration Testing
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        Network VAPT involves evaluating the security of computer networks by identifying and mitigating vulnerabilities in devices, protocols, and configurations to protect against potential threats.
+                        </p>
+
+                        <!-- Buttons -->
+                       <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/8-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Cloud Vulnerability Assessment and Penetration Testing
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        Cloud VAPT assesses the security of cloud-based infrastructures and services, identifying and mitigating vulnerabilities to protect against potential threats and unauthorized access.
+                        </p>
+
+                        <!-- Buttons -->
+                       <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/9-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Infrastructure Vulnerability Assessment and Penetration Testing
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        Infra VAPT assesses the security of an organization's IT infrastructure, identifying and mitigating vulnerabilities in servers, databases, and network devices to ensure protection against potential threats.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 10 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/10-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Firewall Vulnerability and Penetration Testing
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        Firewall VAPT evaluates the security of firewall devices, identifying and mitigating vulnerabilities in configurations, rulesets, and firmware to ensure protection against unauthorized access and security threats.
+                        </p>
+
+                        <!-- Buttons -->
+                       <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 11 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/11-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Physical Security Vulnerability Assessment and Penetration Testing
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        Physical VAPT evaluates and strengthens physical security measures to protect premises and assets against unauthorized access and security breaches.
+                        </p>
+
+                        <!-- Buttons -->
+                       <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 12 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/12-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Certified Computer Forensic Investigator
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        A certified computer forensic investigator collects, analyzes, and interprets digital evidence from devices, ensuring adherence to legal protocols. Their expertise helps uncover cybercrimes and supports effective incident response.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 13 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/13-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Certified Chief Information Security Officer
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        A certified CISO leads strategic cybersecurity initiatives, ensuring the protection of an organization's digital assets. They oversee risk management, compliance, and incident response while implementing robust security measures.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 14 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/14-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Certified Network Defender
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        A certified network defender protects and defends organizational networks from cyber threats. They have expertise in network security protocols and incident response techniques, ensuring the integrity and confidentiality of network resources.
+                        </p>
+
+                        <!-- Buttons -->
+                       <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 15 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/15-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Certified Encryption Specialist
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        A certified encryption specialist implements and manages encryption technologies to secure sensitive data. They understand cryptographic algorithms and ensure data confidentiality and integrity while adhering to industry standards.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 16 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/16-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Certified Penetration Testing Professional
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        A certified penetration testing professional simulates real-world cyberattacks to identify and exploit vulnerabilities in systems and networks. They use ethical hacking techniques to assess security posture, providing actionable insights to enhance defenses and mitigate risks.
+                        </p>
+
+                        <!-- Buttons -->
+                       <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 17 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/17-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Certified Incident Handler
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        A certified incident handler effectively responds to cybersecurity incidents, minimizing damage and restoring normal operations swiftly. They coordinate response efforts to mitigate risks, preserve evidence, and ensure regulatory compliance.
+                        </p>
+
+                        <!-- Buttons -->
+                       <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 18 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/18-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Certified Threat Intelligence Analyst
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        A certified threat intelligence professional analyzes and mitigates cybersecurity threats by gathering and interpreting intelligence data, identifying emerging threats, and developing proactive strategies to defend against them.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 19 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/19-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Certified Secure Computer User
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        A certified secure computer user understands best practices for safeguarding data, recognizing and avoiding common cyber threats, and maintaining good cyber hygiene to effectively protect against online vulnerabilities.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 20 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/20-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Certified Malware Analysis Professional
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        A certified malware analysis professional dissects malicious software to understand its behavior and origins, aiding organizations in developing effective countermeasures against cyber threats.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 21 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/21-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Disaster Recovery Professional
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        A disaster recovery plan is a strategic blueprint for restoring critical business functions after a disaster, ensuring continuity and minimizing downtime.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 22 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/22-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Certified SOC Analyst
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        A certified Security Operations Center (SOC) analyst monitors and analyzes security events and incidents within an organization's IT infrastructure. They utilize SIEM tools to detect and respond to cybersecurity threats, investigating anomalies and coordinating incident response efforts.
+                        </p>
+
+                        <!-- Buttons -->
+                       <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 23 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/23-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Splunk Security Operations Center Analyst
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        The Splunk Security Operations Center (SOC) is a centralized platform for monitoring, analyzing, and responding to security incidents, offering real-time visibility and automation to enhance threat detection and response.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 24 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/24-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        QRadar Security Operations Center Analyst
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        A QRadar analyst utilizes IBM QRadar to monitor and respond to security threats, enhancing cybersecurity posture.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 25 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/25-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        AlienVault Security Operations Center Analyst
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        An AlienVault SOC analyst monitors and responds to security threats using the AlienVault Unified Security Management (USM) platform. They leverage USM's capabilities for threat detection, incident investigation, and response, ensuring effective cybersecurity defense.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 26 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/26-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Full Stack Web Development
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        Full-stack developers are like Swiss Army knives in the world of technology, equipped with the skills to handle both the front-end and back-end, crafting seamless experiences from pixels to databases.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 27 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/27-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Python Developer
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        A Python developer is a versatile coder adept in leveraging the simplicity and power of Python programming language to build robust, scalable, and efficient software solutions, contributing to a myriad of industries from web development to data science and beyond.
+                        </p>
+
+                        <!-- Buttons -->
+                       <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 28 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/28-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Java Developer
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        A Java developer is a skilled programmer proficient in utilizing the Java programming language to design, develop, and maintain robust, scalable, and platform-independent software solutions, powering enterprise applications, mobile apps, and web services with reliability and performance.
+                        </p>
+
+                        <!-- Buttons -->
+                       <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 29 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/29-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Digital Marketing
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        Digital marketing is the art of connecting with customers in the digital age, leveraging online channels such as social media, search engines, and email to engage, inform, and convert audiences into loyal brand advocates.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 30 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/30-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Cloud Computing
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        Cloud computing is the paradigm shift in computing, enabling on-demand access to a shared pool of configurable resources such as servers, storage, and applications, delivered over the internet, facilitating scalability, flexibility, and cost-efficiency for organizations of all sizes.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 31 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/31-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Artificial Intelligence
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        Artificial intelligence is the pinnacle of human ingenuity, empowering machines to learn, reason, and perform tasks with human-like intelligence, revolutionizing industries, augmenting human capabilities, and shaping the future of technology.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 32 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/32-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Machine Learning
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        Machine learning is the engine driving the modern data revolution, enabling computers to learn from data patterns, make predictions, and uncover insights without being explicitly programmed, ushering in a new era of automation, innovation, and efficiency across various domains.
+                        </p>
+
+                        <!-- Buttons -->
+                       <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 33 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/33-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Internet of Things
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        IoT, the Internet of Things, is the interconnected network of physical devices embedded with sensors, software, and connectivity, enabling them to collect and exchange data, revolutionizing industries, enhancing efficiency, and transforming the way we interact with the world around us.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 34 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/34-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Power BI
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        Power BI is a dynamic data visualization tool by Microsoft that helps users turn complex data into clear, interactive reports and dashboards. It simplifies data analysis through an intuitive interface, allowing users to connect to various data sources, create insightful visualizations, and share their findings easily.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 35 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/35-courses.png" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Block Chain
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        Blockchain is a secure, decentralized digital ledger that records transactions across multiple computers. It ensures transparency and prevents tampering, primarily used in cryptocurrencies and various other applications.
+                        </p>
+
+                        <!-- Buttons -->
+                       <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 36 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/36-courses.jpg" alt="Ethical Hacking" class="w-full h-96 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Data Science
+                        </h2>
+                        <p class="text-base text-gray-800 mb-7 text-justify">
+                        Data Science is the art of turning raw data into actionable insights. It combines skills from statistics, computer science, and domain expertise to analyze complex data, uncover patterns, and support decision-making.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="assets/courses/ceh v13 courses.pdf" target="_blank"><button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full font-semibold">READ MORE</button></a>
+                            <a href="https://wa.me/918333801638"> <button class="bg-black hover:bg-gray-900 text-white text-sm px-5 py-2 rounded-full font-semibold transition duration-300 shadow-md">ENROLL NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        <footer>
+            <hr class="mt-7 border-gray-700">
+            <p class="text-white tracking-wider uppercase font-semibold text-sm text-center py-5">Copyright © 2026 <a href="index.html"  class="text-orange-400 hover:text-sky-300 transition duration-300"> SSB TRAINING AND PLACEMENT PVT.LTD</a> All Rights Reserved.</p>
+        </footer>
+        
+    </section>
+
+    <!--script-->
+    <script src="assets/js/menu.js"></script>
+
+</body>
+</html>

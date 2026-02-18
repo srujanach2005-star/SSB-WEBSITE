@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/media/logo.jpeg">
+    <title>SSB TRAINING AND PLACEMENT PVT LTD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!--top header-->
+    <div class="bg-[#1c2328] px-4 py-3 top_header">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center">
+            <p class="text-sm text-white mb-2 sm:mb-0">
+                <span class="text-white font-thin">We Help You Grow Your Business</span>
+            </p>
+            <div class="flex gap-5 text-white text-sm">
+                <a href="#" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--navigation-->
+    <nav id="navbar" class="sticky top-0 left-0 w-full backdrop-blur-sm  z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <!--logo-->
+            <div class="flex items-center space-x-3 ">
+                <a href="index.html"><img src="assets/media/logo.jpeg" alt="Logo" class="h-20 w-auto" /></a>
+            </div>
+
+            <!--desktop nav-->
+            <div class="space-x-6 font-semibold uppercase text-sm custom-nav z-50">
+                <a href="index.html">Home</a>
+                <a href="about_us.html" class="text-blue-500">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="events_news.html">Events & News</a>
+                <a href="apply_now.html">Apply Now</a>
+                <a href="blog.html">Blog</a>
+                <a href="courses.html">Courses</a>
+                <a href="contact_us.html">Contact Us</a>
+            </div>
+
+            <!--hamburger button-->
+            <button id="menu-toggle" class="text-3xl text-black custom-hamburger z-50 relative">
+                <i id="menu-icon" class="fas fa-bars"></i>
+            </button>
+
+            <!--mobile menu (inside nav, just below button)-->
+            <div id="mobile-menu" class="absolute left-0 top-[100%] w-full bg-white text-black px-4 py-6 space-y-4 font-semibold uppercase text-sm text-center z-40 transition-all duration-200 ease-in-out transform scale-y-0 origin-top opacity-0 overflow-hidden">
+                <a href="index.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[20ms]">
+                    Home
+                </a>
+                <a href="about_us.html" class="block text-amber-500 transform opacity-0 -translate-y-4 transition duration-200 delay-[40ms]">
+                    About Us
+                </a>
+                <a href="services.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[60ms]">
+                    Services
+                </a>
+                <a href="events_news.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[80ms]">
+                    Events & News
+                </a>
+                <a href="apply_now.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[100ms]">
+                    Apply Now
+                </a>
+                <a href="blog.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[120ms]">
+                    Blog
+                </a>
+                <a href="courses.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[140ms]">
+                    Courses
+                </a>
+                <a href="contact_us.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[160ms]">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!--navigation background-->
+    <header class="relative relative-position h-screen w-full overflow-hidden" style="top:-104px">
+        
+        <!--background video-->
+        <img src="assets/media/about_us.png" class="absolute top-0 left-0 w-full h-full object-cover opacity-90" >
+
+        <!--white transparent navbar-->
+        <div class="absolute inset-0 bg-black/50 z-0"></div>     
+
+        <!--content on image (right-aligned)-->
+        <div class="absolute inset-0 flex items-center justify-end px-6 md:px-20 z-10">
+            <div class="flex flex-col gap-4 p-6 max-w-xl text-white text-right">
+                <h1 class="text-2xl md:text-4xl font-extrabold">Your Future Begins with the Right Training</h1>
+                <p class="text-base md:text-md leading-relaxed text-justify">
+                  Bridge the gap between learning and real-world success. 
+                  At SSB, we empower students, support innovators, and help
+                  businesses solve challenges through practical, industry-focused technology training.
+                </p>
+                <a href="#about-us" class=" self-end bg-blue-800 w-fit px-6 py-3 rounded-full text-white font-bold text-sm uppercase tracking-wider">
+                    Get To Know Us
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!--about us section-->
+    <section class="bg-fixed bg-cover bg-center px-4 py-12 courses" id="about-us" style="background-image: url('assets/media/background_2.jpg');">
+        
+        <!--Vision and Mission-->
+        <section class="py-4 px-6 flex justify-center items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-7xl w-full">
+
+                <!-- Vision Card -->
+                <div class="group w-full relative bg-gray-100 rounded-xl overflow-hidden shadow-inner sm:shadow-md md:hover:shadow-xl md:transition-shadow md:duration-500">
+                    <div class="flex flex-col md:flex-row items-center md:items-start p-6 md:p-8 md:transition-all md:duration-700 md:ease-in-out md:group-hover:scale-[1.01]">
+
+                        <!-- Image/Icon -->
+                        <div class="w-20 h-20 flex-shrink-0 overflow-hidden rounded-md bg-gray-100 md:transition-transform md:duration-700 md:group-hover:-translate-x-3">
+                            <img src="assets/media/vision.png" alt="Vision Icon" class="w-full h-full object-cover">
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class="mt-5 md:mt-0 md:ml-6 text-center md:text-left md:transition-all md:duration-700 md:group-hover:translate-x-3">
+                            <h3 class="text-3xl font-semibold text-blue-800 mb-4">Vision</h3>
+                            <p class="text-gray-700 leading-relaxed text-md text-justify">
+                                At SSB TRAINING AND PLACEMENT PRIVATE LIMITED, our vision is to become a leading and trusted global
+                                partner in providing innovative software solutions, reliable manpower support, and
+                                impactful technology based training. We aim to empower organizations and
+                                individuals to achieve sustainable growth, operational excellence, and digital
+                                transformation. By bridging the gap between technology, talent, and training, we
+                                strive to be at the forefront of change driving progress across industries and creating
+                                a smarter, more capable workforce.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mission Card -->
+                <div class="group w-full relative bg-gray-100 rounded-xl overflow-hidden shadow-inner sm:shadow-md md:hover:shadow-xl md:transition-shadow md:duration-500">
+                    <div class="flex flex-col md:flex-row items-center md:items-start p-6 md:p-8 md:transition-all md:duration-700 md:ease-in-out md:group-hover:scale-[1.01] md:group-hover:shadow-lg">
+
+                        <!-- Image/Icon -->
+                        <div class="w-20 h-20 flex-shrink-0 overflow-hidden rounded-md bg-gray-100 md:transition-transform md:duration-700 md:group-hover:-translate-x-3">
+                            <img src="assets/media/mission.png" alt="Mission Icon" class="w-full h-full object-cover">
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class="mt-5 md:mt-0 md:ml-6 text-center md:text-left md:transition-all md:duration-700 md:group-hover:translate-x-3">
+                            <h3 class="text-3xl font-semibold text-black-800 mb-4">Mission</h3>
+                            <p class="text-gray-700 leading-relaxed text-md text-justify">
+                                Our mission is to deliver scalable, high-quality, and customized software solutions,
+                                backed by skilled manpower and future-ready training programs. We are committed
+                                to equipping businesses with not only the right tools and people but also with the
+                                knowledge and skills required to thrive in an evolving digital landscape. Through
+                                hands-on training modules, real-world simulations, and continuous upskilling
+                                support, we empower teams to adopt new technologies with confidence. We believe
+                                in building long-term partnerships founded on trust, transparency, and results
+                                ensuring our clients receive end-to-end support that drives measurable success and growth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Milestone Section -->
+        <section class="py-8 px-6 flex justify-center items-center">
+            <div class="w-full max-w-7xl">
+                
+                <!-- Main Card -->
+                <div class="group relative bg-black/30 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-500 overflow-hidden">
+                    <div class="p-6 md:p-8 text-center">
+                        <h2 class="text-4xl font-bold text-blue-500 mb-10">Milestone</h2>
+                        
+                            <!-- Inner Cards -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            
+                                <!-- 2024 Card -->
+                                <div class="bg-gray-100 rounded-lg shadow-sm border-l-8 border-blue-800 p-5 transform transition duration-500 hover:scale-[1.015] hover:shadow-md">
+                                    <h4 class="text-2xl font-bold text-blue-800 mb-2">2025</h4>
+                                    <p class="text-gray-800 text-md leading-relaxed text-justify">
+                                        Since our inception in 2024, SSB TRAINING AND PLACEMENT PRIVATE LIMITED has steadily evolved into a
+                                        dynamic force in the fields of software development, manpower support, and
+                                        technology based training. In the early months of 2024, we laid the foundation by
+                                        building core teams and launching internship programs in Cybersecurity, Digital
+                                        Marketing, and Technical Support. These initiatives marked our commitment to skill
+                                        development and real-world training. <br><br>
+                                        By mid-2024, we signed our first institutional MoU with Chalapathi Engineering
+                                        College, Guntur, to foster academic-industry collaboration through workshops,
+                                        internships, and hands-on sessions. Throughout the year, we conducted various
+                                        technology-driven workshops across AndhraPradesh, focusing on Cybersecurity,
+                                        Cloud Computing, and emerging digital skills. In October, we delivered our first
+                                        private Cybersecurity & Ethical Hacking Workshop, receiving overwhelming feedback
+                                        for its practical and interactive approach. Towards the end of the year, we initiated
+                                        cybercrime awareness programs targeting government school and junior college
+                                        students demonstrating our social responsibility in promoting digital safety.
+                                    </p>
+                                </div>
+
+                                <!-- 2025 Card -->
+                                <div class="bg-gray-100 rounded-lg shadow-sm border-l-8 border-blue-800 p-5 transform transition duration-500 hover:scale-[1.015] hover:shadow-md">
+                                    <h4 class="text-2xl font-bold text-black-800 mb-2">2026</h4>
+                                    <p class="text-gray-800 text-md leading-relaxed text-justify">
+                                        In 2025, we expanded our technical capabilities and credentials by guiding interns
+                                        and professionals through the Certified Ethical Hacker (CEH) certification program.
+                                        We launched our advanced online VAPT Internship Program with a hands-on learning
+                                        model, further enriching our cybersecurity training ecosystem. To support deeper
+                                        research and practical labs, we procured cutting-edge tools like Raspberry Pi 5, RTLSDR, and Alfa Adapters, enabling testing in wireless and automotive security domains.
+                                        By mid-2025, we officially ventured into software and manpower support-based
+                                        projects for private clients, offering services like online proctoring, biometric
+                                        verification, and compliance monitoring. Additionally, we began building a full-scale
+                                        technology training and deployment platform aimed at equipping students and
+                                        organizations with future-ready skills to meet industry demands.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Meet The Team-->
+        <section class="py-8 px-6 flex justify-center items-center">
+            <div class="w-full max-w-7xl text-center bg-black/30 rounded-xl px-8 py-12">
+                <h2 class="text-4xl font-bold text-blue-500 mb-10">Meet The Team</h2>
+                <p class="text-gray-100 max-w-2xl mx-auto mb-10 text-md">
+                    Behind every great solution is a great team. Meet the people who make our mission possible with skill, 
+                    vision, and a shared commitment to excellence.
+                </p>
+                <!-- Centered Grid Wrapper -->
+                <div class="flex justify-center">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl w-full">
+                        
+                        <!-- Team Member 1 -->
+                        <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition duration-500 transform hover:scale-105">
+                            <div class="flex justify-center">
+                                <img src="assets/media/raghava.PNG" alt="Alex Smith" class="w-36 h-36 rounded-full object-cover border-4 border-blue-200">
+                            </div>
+                            <div class="mt-4 text-center">
+                                <h3 class="text-xl font-semibold text-gray-800">B.Sai Krishna</h3>
+                                <p class="mt-3 text-sm font-semibold text-gray-600">C E O</p>
+                            </div>
+                            <div class="mt-4 flex justify-center gap-4 text-gray-500">
+                                <a href="#"><i class="fab fa-facebook-f hover:text-blue-600"></i></a>
+                                <a href="#"><i class="fab fa-twitter hover:text-blue-400"></i></a>
+                                <a href="#"><i class="fab fa-instagram hover:text-pink-500"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Team Member 2 -->
+                        <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition duration-500 transform hover:scale-105">
+                            <div class="flex justify-center">
+                                <img src="assets/media/priyanka.jpg" alt="May Brown" class="w-36 h-36 rounded-full object-cover border-4 border-blue-200">
+                            </div>
+                            <div class="mt-4 text-center">
+                                <h3 class="text-xl font-semibold text-gray-800">Dr.R.Partheepan</h3>
+                                <p class="mt-3 text-sm font-semibold text-gray-600">Business Relationship Manager</p>
+                            </div>
+                            <div class="mt-4 flex justify-center gap-4 text-gray-500">
+                                <a href="#"><i class="fab fa-facebook-f hover:text-blue-600"></i></a>
+                                <a href="#"><i class="fab fa-twitter hover:text-blue-400"></i></a>
+                                <a href="#"><i class="fab fa-instagram hover:text-pink-500"></i></a>
+                            </div>
+                        </div>
+                        <!-- Team Member 3 -->
+                        <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition duration-500 transform hover:scale-105">
+                            <div class="flex justify-center">
+                                <img src="assets/media/srujan.jpg" alt="May Brown" class="w-36 h-36 rounded-full object-cover border-4 border-blue-200">
+                            </div>
+                            <div class="mt-4 text-center">
+                                <h3 class="text-xl font-semibold text-gray-800">Srujan</h3>
+                                <p class="mt-3 text-sm font-semibold text-gray-600">Cyber Security Analyst</p>
+                            </div>
+                            <div class="mt-4 flex justify-center gap-4 text-gray-500">
+                                <a href="#"><i class="fab fa-facebook-f hover:text-blue-600"></i></a>
+                                <a href="#"><i class="fab fa-twitter hover:text-blue-400"></i></a>
+                                <a href="#"><i class="fab fa-instagram hover:text-pink-500"></i></a>
+                            </div>
+                        </div>
+                        <!-- Team Member 4 -->
+                        <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition duration-500 transform hover:scale-105">
+                            <div class="flex justify-center">
+                                <img src="assets/media/murali.png" alt="May Brown" class="w-36 h-36 rounded-full object-cover border-4 border-blue-200">
+                            </div>
+                            <div class="mt-4 text-center">
+                                <h3 class="text-xl font-semibold text-gray-800">Murali</h3>
+                                <p class="mt-3 text-sm font-semibold text-gray-600">Project Aquisition Manager</p>
+                            </div>
+                            <div class="mt-4 flex justify-center gap-4 text-gray-500">
+                                <a href="#"><i class="fab fa-facebook-f hover:text-blue-600"></i></a>
+                                <a href="#"><i class="fab fa-twitter hover:text-blue-400"></i></a>
+                                <a href="#"><i class="fab fa-instagram hover:text-pink-500"></i></a>
+                            </div>
+                        </div>
+                        <!-- Team Member 5 -->
+                        <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition duration-500 transform hover:scale-105">
+                            <div class="flex justify-center">
+                                <img src="assets/media/sekhar.png" alt="May Brown" class="w-36 h-36 rounded-full object-cover border-4 border-blue-200">
+                            </div>
+                            <div class="mt-4 text-center">
+                                <h3 class="text-xl font-semibold text-gray-800">Sekhar</h3>
+                                <p class="mt-3 text-sm font-semibold text-gray-600">Digital Campaign and Client Engagement Manager</p>
+                            </div>
+                            <div class="mt-4 flex justify-center gap-4 text-gray-500">
+                                <a href="#"><i class="fab fa-facebook-f hover:text-blue-600"></i></a>
+                                <a href="#"><i class="fab fa-twitter hover:text-blue-400"></i></a>
+                                <a href="#"><i class="fab fa-instagram hover:text-pink-500"></i></a>
+                            </div>
+                        </div>
+                        <!-- Team Member 6 -->
+                        <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition duration-500 transform hover:scale-105">
+                            <div class="flex justify-center">
+                                <img src="assets/media/anand.jpg" alt="May Brown" class="w-36 h-36 rounded-full object-cover border-4 border-blue-200">
+                            </div>
+                            <div class="mt-4 text-center">
+                                <h3 class="text-xl font-semibold text-gray-800">Anand</h3>
+                                <p class="mt-3 text-sm font-semibold text-gray-600">Digital Forensics Investigator</p>
+                            </div>
+                            <div class="mt-4 flex justify-center gap-4 text-gray-500">
+                                <a href="#"><i class="fab fa-facebook-f hover:text-blue-600"></i></a>
+                                <a href="#"><i class="fab fa-twitter hover:text-blue-400"></i></a>
+                                <a href="#"><i class="fab fa-instagram hover:text-pink-500"></i></a>
+                            </div>
+                        </div>
+                        <!-- Team Member 7 -->
+                        <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition duration-500 transform hover:scale-105">
+                            <div class="flex justify-center">
+                                <img src="assets/media/abhiruf.jpg" alt="May Brown" class="w-36 h-36 rounded-full object-cover border-4 border-blue-200">
+                            </div>
+                            <div class="mt-4 text-center">
+                                <h3 class="text-xl font-semibold text-gray-800">Abhiruf</h3>
+                                <p class="mt-3 text-sm font-semibold text-gray-600">Productivity & Workflow Coordinator</p>
+                            </div>
+                            <div class="mt-4 flex justify-center gap-4 text-gray-500">
+                                <a href="#"><i class="fab fa-facebook-f hover:text-blue-600"></i></a>
+                                <a href="#"><i class="fab fa-twitter hover:text-blue-400"></i></a>
+                                <a href="#"><i class="fab fa-instagram hover:text-pink-500"></i></a>
+                            </div>
+                        </div>
+                        <!-- Team Member 8 -->
+                        <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition duration-500 transform hover:scale-105">
+                            <div class="flex justify-center">
+                                <img src="assets/media/sukanya.jpg" alt="May Brown" class="w-36 h-36 rounded-full object-cover border-4 border-blue-200">
+                            </div>
+                            <div class="mt-4 text-center">
+                                <h3 class="text-xl font-semibold text-gray-800">Santhoshi Sukanya</h3>
+                                <p class="mt-3 text-sm font-semibold text-gray-600">Developer</p>
+                            </div>
+                            <div class="mt-4 flex justify-center gap-4 text-gray-500">
+                                <a href="#"><i class="fab fa-facebook-f hover:text-blue-600"></i></a>
+                                <a href="#"><i class="fab fa-twitter hover:text-blue-400"></i></a>
+                                <a href="#"><i class="fab fa-instagram hover:text-pink-500"></i></a>
+                            </div>
+                        </div>
+                        <!-- Team Member 9 -->
+                        <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition duration-500 transform hover:scale-105">
+                            <div class="flex justify-center">
+                                <img src="assets/media/hima_bindu.jpg" alt="May Brown" class="w-36 h-36 rounded-full object-cover border-4 border-blue-200">
+                            </div>
+                            <div class="mt-4 text-center">
+                                <h3 class="text-xl font-semibold text-gray-800">Hima Bindu</h3>
+                                <p class="mt-3 text-sm font-semibold text-gray-600">HR Operations Manager</p>
+                            </div>
+                            <div class="mt-4 flex justify-center gap-4 text-gray-500">
+                                <a href="#"><i class="fab fa-facebook-f hover:text-blue-600"></i></a>
+                                <a href="#"><i class="fab fa-twitter hover:text-blue-400"></i></a>
+                                <a href="#"><i class="fab fa-instagram hover:text-pink-500"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MoU Section -->
+        <section class="py-8 px-6 flex justify-center items-center">
+            <div class="w-full max-w-7xl text-center bg-black/30 rounded-xl px-8 py-12">
+                <h2 class="text-4xl font-bold text-blue-500 mb-12">MoU Collaborations</h2>
+                <p class="text-gray-100 max-w-2xl mx-auto mb-10 text-md">
+                    Our MoUs reflect a shared vision to empower students and institutions with hands-on learning, real-world exposure, and future-ready skills.
+                </p>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 justify-center">
+      
+                    <!-- MoU Card -->
+                    <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
+                        <img src="assets/media/hindu_college.png" alt="College Logo" class="mx-auto mb-3 w-24 h-24 object-contain">
+                        <h3 class="text-sm font-medium text-gray-800">Hindu College</h3>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
+                        <img src="assets/media/anurag_college.png" alt="College Logo" class="mx-auto mb-3 w-24 h-24 object-contain">
+                        <h3 class="text-sm font-medium text-gray-800">Anurag Engineering College</h3>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
+                        <img src="assets/media/priyadarsini_college.jpg"College Logo" class="mx-auto mb-3 w-24 h-24 object-contain">
+                        <h3 class="text-sm font-medium text-gray-800">Priyadarshini Institute of Technology and Science</h3>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
+                        <img src="assets/media/chalapathi_college.png" alt="College Logo" class="mx-auto mb-3 w-24 h-24 object-contain">
+                        <h3 class="text-sm font-medium text-gray-800">Chalapathi Institute of Technology</h3>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
+                        <img src="assets/media/vignan_college.jpg" alt="College Logo" class="mx-auto mb-3 w-24 h-24 object-contain">
+                        <h3 class="text-sm font-medium text-gray-800">Vignan Engineering College</h3>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
+                        <img src="assets/media/victory_college.jpg" alt="College Logo" class="mx-auto mb-3 w-24 h-24 object-contain">
+                        <h3 class="text-sm font-medium text-gray-800">Victory Degree College</h3>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
+                        <img src="assets/media/tjps_college.jpg" alt="College Logo" class="mx-auto mb-3 w-24 h-24 object-contain">
+                        <h3 class="text-sm font-medium text-gray-800">TJPS College</h3>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
+                        <img src="assets/media/womens_college.avif" alt="College Logo" class="mx-auto mb-3 w-24 h-24 object-contain">
+                        <h3 class="text-sm font-medium text-gray-800">Govt. College for Womens</h3>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
+                        <img src="assets/media/ramachandra_college.jpg" alt="College Logo" class="mx-auto mb-3 w-24 h-24 object-contain">
+                        <h3 class="text-sm font-medium text-gray-800">Ramachandra College of Engineering</h3>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
+                        <img src="assets/media/sri_vasavi_college.jpg" alt="College Logo" class="mx-auto mb-3 w-24 h-24 object-contain">
+                        <h3 class="text-sm font-medium text-gray-800">Sri Vasavi Engineering College</h3>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
+                        <img src="assets/media/bh_college.jpg" alt="College Logo" class="mx-auto mb-3 w-24 h-24 object-contain">
+                        <h3 class="text-sm font-medium text-gray-800">BH Womens College</h3>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
+                        <img src="assets/media/bapatla_college.jpg" alt="College Logo" class="mx-auto mb-3 w-24 h-24 object-contain">
+                        <h3 class="text-sm font-medium text-gray-800">Bapatla Engineering College</h3>
+                    </div>
+
+                    <!-- <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
+                        <img src="assets/media/svs_college.jpg" alt="College Logo" class="mx-auto mb-3 w-24 h-24 object-contain">
+                        <h3 class="text-sm font-medium text-gray-800">SVS Engineering</h3>
+                    </div> -->
+
+                    <!-- <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
+                        <img src="assets/media/sumathi_college.png" alt="College Logo" class="mx-auto mb-3 w-24 h-24 object-contain">
+                        <h3 class="text-sm font-medium text-gray-800">Sumathi Reddy Institute of Technology</h3>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
+                        <img src="assets/media/kakatiya_university.jpg" alt="College Logo" class="mx-auto mb-3 w-24 h-24 object-contain">
+                        <h3 class="text-sm font-medium text-gray-800">Kakatiya University</h3>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
+                        <img src="assets/media/swarnandhra.jpg" alt="College Logo" class="mx-auto mb-3 w-24 h-24 object-contain">
+                        <h3 class="text-sm font-medium text-gray-800">Swarnandhra College of Engineering and Technology</h3>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
+                        <img src="assets/media/sri_chandrasekharendra.jpg" alt="College Logo" class="mx-auto mb-3 w-24 h-24 object-contain">
+                        <h3 class="text-sm font-medium text-gray-800">Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya</h3>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Industry Collaborations Section -->
+        <section class="py-8 px-6 flex justify-center items-center">
+            <div class="w-full max-w-7xl text-center bg-black/30 rounded-xl px-8 py-12">
+                <h2 class="text-4xl font-bold text-blue-500 mb-12">Our Industry Bussiness Colloborations</h2>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 justify-center">
+                
+                    <!-- Business Card -->
+                    <div class="bg-white p-4 rounded-xl shadow-md backdrop-blur-sm hover:shadow-lg transition duration-500 transform hover:-translate-y-1 hover:scale-105 hover:brightness-105">
+                        <img src="assets/media/service_hub.jpg" alt="Client Logo" class="mx-auto mb-2 w-28 h-28 object-contain">
+                        <h3 class="text-xs font-semibold text-gray-800">Service Hub IT Solutions</h3>
+                    </div>
+
+                    <!-- Repeat for more clients -->
+                    <div class="bg-white p-4 rounded-xl shadow-md backdrop-blur-sm hover:shadow-lg transition duration-500 transform hover:-translate-y-1 hover:scale-105 hover:brightness-105">
+                        <img src="assets/media/zentro_byte_solutions.jpg" alt="Client Logo" class="mx-auto mb-2 w-28 h-28 object-contain">
+                        <h3 class="text-xs font-semibold text-gray-800">Zentro Byte Solutions</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clients Section -->
+        <section class="py-8 px-6 flex justify-center items-center">
+            <div class="w-full max-w-7xl text-center bg-black/30 rounded-xl px-8 py-12">
+                <h2 class="text-4xl font-bold text-blue-500 mb-12">Our Clients</h2>
+                <p class="text-gray-100 max-w-2xl mx-auto mb-10">
+                    We are proud to have partnered with a diverse range of organizations, helping them transform ideas into impactful 
+                    digital solutions.
+                </p>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 justify-center">
+                
+                    <!-- Client Card -->
+                    <div class="bg-white p-4 rounded-xl shadow-md backdrop-blur-sm hover:shadow-lg transition duration-500 transform hover:-translate-y-1 hover:scale-105 hover:brightness-105">
+                        <img src="assets/media/client-1.jpg" alt="Client Logo" class="mx-auto mb-2 w-28 h-28 object-contain">
+                        <h3 class="text-xs font-semibold text-gray-800">Electronics Corporation Of India Limited</h3>
+                    </div>
+
+                    <!-- Repeat for more clients -->
+                    <div class="bg-white p-4 rounded-xl shadow-md backdrop-blur-sm hover:shadow-lg transition duration-500 transform hover:-translate-y-1 hover:scale-105 hover:brightness-105">
+                        <img src="assets/media/client-2.png" alt="Client Logo" class="mx-auto mb-2 w-28 h-28 object-contain">
+                        <h3 class="text-xs font-semibold text-gray-800">Bharat Heavy Electricals Limited</h3>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl shadow-md backdrop-blur-sm hover:shadow-lg transition duration-500 transform hover:-translate-y-1 hover:scale-105 hover:brightness-105">
+                        <img src="assets/media/merittrac.png" alt="Client Logo" class="mx-auto mb-2 w-28 h-28 object-contain">
+                        <h3 class="text-xs font-semibold text-gray-800">merit trac</h3>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl shadow-md backdrop-blur-sm hover:shadow-lg transition duration-500 transform hover:-translate-y-1 hover:scale-105 hover:brightness-105">
+                        <img src="assets/media/talview.png" alt="Client Logo" class="mx-auto mb-2 w-28 h-28 object-contain">
+                        <h3 class="text-xs font-semibold text-gray-800">TALVIEW</h3>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl shadow-md backdrop-blur-sm hover:shadow-lg transition duration-500 transform hover:-translate-y-1 hover:scale-105 hover:brightness-105">
+                        <img src="assets/media/eduquity.jpg" alt="Client Logo" class="mx-auto mb-2 w-28 h-28 object-contain">
+                        <h3 class="text-xs font-semibold text-gray-800">eduquity</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--footer-->
+        <footer>
+            <hr class="mt-7 border-gray-700">
+            <p class="text-white tracking-wider uppercase font-semibold text-sm text-center py-5">Copyright © 2024 <a href="index.html" class="text-amber-500"> SSB TRAINING AND PLACEMENT PVT.LTD</a> All Rights Reserved.</p>
+        </footer>
+        
+    </section>
+
+    <!--script-->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="assets/js/menu.js"></script>
+
+</body>
+</html>

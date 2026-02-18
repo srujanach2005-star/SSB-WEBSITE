@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/media/logo.jpeg">
+    <title>SSB TRAINING AND PLACEMENT PVT LTD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!--top header-->
+    <div class="bg-[#1c2328] px-4 py-3 top_header">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center">
+            <p class="text-sm text-white mb-2 sm:mb-0">
+                <span class="text-white font-thin">We Help You Grow Your Business</span>
+            </p>
+            <div class="flex gap-5 text-white text-sm">
+                <a href="https://www.youtube.com/@SynthoQuest_Official" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.facebook.com/people/SynthoQuest-official/61559656813295/?mibextid=qi2Omg&rdid=cDx3M8k2tayhmeQ4&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FPGyPqzPyT5hE3deS%2F%3Fmibextid%3Dqi2Omg" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/SynthoQuest" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/synthoquest_official/?next=%2F" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/synthoquest-official-4684812b6/" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--navigation-->
+    <nav id="navbar" class="sticky top-0 left-0 w-full backdrop-blur-sm  z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <!--logo-->
+            <div class="flex items-center space-x-3 ">
+                <a href="index.html"><img src="assets/media/logo.jpeg" alt="Logo" class="h-20 w-auto" /></a>
+            </div>
+
+            <!--desktop nav-->
+            <div class="space-x-6 font-semibold uppercase text-sm custom-nav z-50">
+                <a href="index.html">Home</a>
+                <a href="about_us.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="events_news.html">Events & News</a>
+                <a href="apply_now.html" class="text-blue-500">Apply Now</a>
+                <a href="blog.html">Blog</a>
+                <a href="courses.html">Courses</a>
+                <a href="contact_us.html">Contact Us</a>
+            </div>
+
+            <!--hamburger button-->
+            <button id="menu-toggle" class="text-3xl text-black custom-hamburger z-50 relative">
+                <i id="menu-icon" class="fas fa-bars"></i>
+            </button>
+
+            <!--mobile menu (inside nav, just below button)-->
+            <div id="mobile-menu" class="absolute left-0 top-[100%] w-full bg-white text-black px-4 py-6 space-y-4 font-semibold uppercase text-sm text-center z-40 transition-all duration-200 ease-in-out transform scale-y-0 origin-top opacity-0 overflow-hidden">
+                <a href="index.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[20ms]">
+                    Home
+                </a>
+                <a href="about_us.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[40ms]">
+                    About Us
+                </a>
+                <a href="services.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[60ms]">
+                    Services
+                </a>
+                <a href="events_news.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[80ms]">
+                    Events & News
+                </a>
+                <a href="apply_now.html" class="block text-amber-500 transform opacity-0 -translate-y-4 transition duration-200 delay-[100ms]">
+                    Apply Now
+                </a>
+                <a href="blog.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[120ms]">
+                    Blog
+                </a>
+                <a href="courses.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[140ms]">
+                    Courses
+                </a>
+                <a href="contact_us.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[160ms]">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!--navigation background-->
+    <header class="relative relative-position h-screen w-full overflow-hidden" style="top:-104px">
+        
+        <!--background video-->
+        <img src="assets/media/apply_now.jpg" class="absolute top-0 left-0 w-full h-full object-cover opacity-90" >
+
+        <!--white transparent navbar-->
+        <div class="absolute inset-0 bg-black/50 z-0"></div>     
+
+        <!--content on image (left-aligned)-->
+        <div class="absolute inset-0 flex items-center justify-start px-6 md:px-20 z-10">
+            <div class="flex flex-col gap-4 p-6 max-w-xl text-white">
+                <h1 class="text-2xl md:text-4xl font-extrabold">Turn Your Ambition Into Achievement with SSB</h1>
+                <p class="text-base md:text-md leading-relaxed text-justify">
+                   Ready to apply your skills in a real-time environment? At SSB Training & Placement Pvt Ltd,
+                   we provide internships, live projects, and career opportunities that help you gain hands-on
+                   experience and grow with confidence. Turn your knowledge into real-world success with us.
+                </p>
+                <a href="#join-us" class="bg-blue-800 w-fit px-6 py-3 rounded-full text-white font-bold text-sm uppercase tracking-wider">
+                    Join Us
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!--apply now section-->
+    <section class="bg-fixed bg-cover bg-center px-4 py-12 courses" id="join-us" style="background-image: url('assets/media/background_2.jpg');">
+        
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[1.3fr_1.1fr] gap-20 mt-20">
+
+            <!-- Left Column: Two stacked white cards on a dark transparent panel -->
+            <div class="bg-black/30 rounded-xl p-6 flex flex-col gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white/20 rounded-sm p-6">
+                    <h3 class="text-white uppercase text-2xl font-bold tracking-wide mb-5 ">Apply for Internship</h3>
+                    <p class="text-gray-100 text-md leading-relaxed mb-5 text-justify">"Apply for our internship program and kickstart your career in cutting-edge technologies. Gain hands-on experience, build your portfolio, and learn from industry experts."</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeyRhm7qajeksllG68KFS_VacB6myvfT4FdW1MaWZvKh81-zg/viewform" class="bg-blue-500 w-fit px-6 py-2 font-bold rounded-full text-white  text-sm uppercase tracking-wider">
+                    Apply Now
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white/20 shadow-md p-6">
+                    <h3 class="text-white uppercase text-2xl font-bold tracking-wide mb-5 ">Apply for Freelancer Position</h3>
+                    <p class="text-gray-100 text-md leading-relaxed mb-5 text-justify">"Join our team as a freelancer and leverage your cutting-edge technologies skills to drive business growth. Collaborate with us on exciting projects and take your career to the next level."</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQGk67JgE1INWiZPlSuPTi8GhydXFtnEgAwJVbkk15YG5njg/viewform" class="bg-teal-600 w-fit px-6 py-2 font-bold rounded-full text-white text-sm uppercase tracking-wider">
+                    Apply Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: Expandable content card -->
+            <!-- Right Column: Accordion-style Info Card -->
+            <div class="bg-gray-100 text-justify rounded-xl shadow-xl overflow-hidden text-gray-800 ">
+                <div class="p-6 space-y-4" id="accordion">
+
+                    <!-- Card 1 Item -->
+                    <div class="accordion-item">
+                        <div onclick="toggleAccordion(this)" class="accordion-header flex items-center text-left justify-between font-bold text-black text-2xl cursor-pointer">
+                            <span>Workshops | Seminars | Hackathons | Webinars</span>
+                            <span class="arrow transition-transform duration-300 text-black">&#9656;</span>
+                        </div>
+                        <div class="accordion-body overflow-hidden transition-all duration-500 ease-in-out max-h-[24px]">
+                            <p class="mt-2 text-md leading-relaxed text-gray-700">
+                            Seminars, workshops, hackathons, and webinars are educational events that promote learning, growth, and collaboration.
+                            Seminars discuss ideas, workshops provide skills, hackathons solve problems, and webinars educate online.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 Item -->
+                    <div class="accordion-item">
+                        <div onclick="toggleAccordion(this)" class="accordion-header flex items-center justify-between text-left font-bold text-black text-2xl cursor-pointer">
+                            <span>Corporate Training | Placement Assistance</span>
+                            <span class="arrow transition-transform duration-300 text-black">&#9656;</span>
+                        </div>
+                        <div class="accordion-body overflow-hidden transition-all duration-500 ease-in-out max-h-[24px]">
+                            <p class="mt-2 text-md leading-relaxed text-gray-700">
+                            We provide corporate training on a range of cutting-edge technologies, including AI, Blockchain, Cloud Computing,
+                            Cybersecurity, Data Science, IoT, and Machine Learning, to empower your team with the latest skills.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 Item -->
+                    <div class="accordion-item">
+                        <div onclick="toggleAccordion(this)" class="accordion-header flex items-center justify-between font-bold  text-left text-blue-500 text-2xl cursor-pointer">
+                            <span>Business-to-Business (B2B) Relationships</span>
+                            <span class="arrow transition-transform duration-300 rotate-90 text-black">&#9656;</span>
+                        </div>
+                        <div class="accordion-body overflow-hidden transition-all duration-500 ease-in-out">
+                            <p class="mt-2 text-md leading-relaxed text-gray-700">
+                            Strengthen our B2B relationships! Share insights with partners and clients to foster trust, collaboration, and growth.
+                            Stay ahead with trends in AI, Blockchain, Cloud, and more.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 Item -->
+                    <div class="accordion-item">
+                        <div onclick="toggleAccordion(this)" class="accordion-header flex items-center justify-between text-left font-bold text-black text-2xl cursor-pointer">
+                            <span>Spread the Word to Friends | Colleagues</span>
+                            <span class="arrow transition-transform duration-300 text-black">&#9656;</span>
+                        </div>
+                        <div class="accordion-body overflow-hidden transition-all duration-500 ease-in-out max-h-[24px]">
+                            <p class="mt-2 text-md leading-relaxed text-gray-700">
+                            Spread the word! Share with friends and colleagues to stay ahead in tech. From AI to Cybersecurity, empower your network
+                            with knowledge that makes a difference.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        <footer>
+            <hr class="mt-7 border-gray-700">
+            <p class="text-white tracking-wider uppercase font-semibold text-sm text-center py-5">Copyright © 2026 <a href="index.html" class="text-amber-500"> SSB TRAINING AND PLACEMENT PVT LTD</a> All Rights Reserved.</p>
+        </footer>
+
+    </section>
+
+    <!--script-->
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/apply_now.js"></script>
+
+</body>
+</html>

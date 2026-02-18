@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" type="image/png" href="assets/media/logo.jpeg">
+    <title>SSB TRAINING AND PLACEMENT PVT LTD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!--top header-->
+    <div class="bg-[#1c2328] px-4 py-3 top_header">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center">
+            <p class="text-sm text-white mb-2 sm:mb-0">
+                <span class="text-white font-thin">We Help You Grow Your Business</span>
+            </p>
+            <div class="flex gap-5 text-white text-sm">
+                <a href="#" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--navigation-->
+    <nav id="navbar" class="sticky top-0 left-0 w-full backdrop-blur-sm  z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <!--logo-->
+            <div class="flex items-center space-x-3 ">
+                <a href="index.html"><img src="assets/media/logo.jpeg" alt="Logo" class="h-20 w-auto" /></a>
+            </div>
+
+            <!--desktop nav-->
+            <div class="space-x-6 font-semibold uppercase text-sm custom-nav z-50">
+                <a href="index.html">Home</a>
+                <a href="about_us.html">About Us</a>
+                <a href="services.html" class="text-blue-500">Services</a>
+                <a href="events_news.html">Events & News</a>
+                <a href="apply_now.html">Apply Now</a>
+                <a href="blog.html">Blog</a>
+                <a href="courses.html">Courses</a>
+                <a href="contact_us.html">Contact Us</a>
+            </div>
+
+            <!--hamburger button-->
+            <button id="menu-toggle" class="text-3xl text-black custom-hamburger z-50 relative">
+                <i id="menu-icon" class="fas fa-bars"></i>
+            </button>
+
+            <!--mobile menu (inside nav, just below button)-->
+            <div id="mobile-menu" class="absolute left-0 top-[100%] w-full bg-white text-black px-4 py-6 space-y-4 font-semibold uppercase text-sm text-center z-40 transition-all duration-200 ease-in-out transform scale-y-0 origin-top opacity-0 overflow-hidden">
+                <a href="index.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[20ms]">
+                    Home
+                </a>
+                <a href="about_us.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[40ms]">
+                    About Us
+                </a>
+                <a href="services.html" class="block text-amber-500 transform opacity-0 -translate-y-4 transition duration-200 delay-[60ms]">
+                    Services
+                </a>
+                <a href="events_news.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[80ms]">
+                    Events & News
+                </a>
+                <a href="apply_now.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[100ms]">
+                    Apply Now
+                </a>
+                <a href="blog.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[120ms]">
+                    Blog
+                </a>
+                <a href="courses.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[140ms]">
+                    Courses
+                </a>
+                <a href="contact_us.html" class="block transform opacity-0 -translate-y-4 transition duration-200 delay-[160ms]">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!--navigation background-->
+    <header class="relative relative-position h-screen w-full overflow-hidden" style="top:-104px">
+        
+        <!--background video-->
+        <img src="assets/media/services.png" class="absolute top-0 left-0 w-full h-full object-cover opacity-90" >
+
+        <!--white transparent navbar-->
+        <div class="absolute inset-0 bg-black/50 z-0"></div>     
+
+        <!--content on image (left-aligned)-->
+        <div class="absolute inset-0 flex items-center justify-start px-6 md:px-20 z-10">
+            <div class="flex flex-col gap-4 p-6 max-w-xl text-white">
+                <h1 class="text-2xl md:text-4xl font-extrabold">From Skill Development to Career Placement</h1>
+                <p class="text-base md:text-md leading-relaxed text-justify">
+                    As technology evolves, SSB Training & Placement Pvt Ltd empowers individuals to stay ahead and organizations
+                    to stay competitive. We combine hands-on technical training with real-time project experience to build true industry-ready professionals.
+                </p>
+                <a href="#services" class="bg-blue-800 w-fit px-6 py-3 rounded-full text-white font-bold text-sm uppercase tracking-wider">
+                    Get Started With Us
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!--services section-->
+    <section class="bg-fixed bg-cover bg-center px-4 py-12 courses" id="services" style="background-image: url('assets/media/background_2.jpg');">
+        <div class="p-6 rounded-xl max-w-7xl mx-auto mt-20">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Card 1 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/services_1.jpg" alt="Ethical Hacking" class="w-full h-60 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Cyber Security Services
+                        </h2>
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="https://wa.me/+919550773888"><button class="bg-blue-500 text-white text-sm px-4 py-2 rounded-full font-semibold">CONTACT US</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/services_2.jpg" alt="Ethical Hacking" class="w-full h-60 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Digital Marketing Services
+                        </h2>
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="https://wa.me/+919550773888"><button class="bg-blue-500 text-white text-sm px-4 py-2 rounded-full font-semibold">CONTACT US</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/services_3.jpg" alt="Ethical Hacking" class="w-full h-60 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Application Development Services
+                        </h2>
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="https://wa.me/+919550773888"><button class="bg-blue-500 text-white text-sm px-4 py-2 rounded-full font-semibold">CONTACT US</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/services_4.jpg" alt="Ethical Hacking" class="w-full h-60 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Software and Project Development Services
+                        </h2>
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="https://wa.me/+919550773888"><button class="bg-blue-500 text-white text-sm px-4 py-2 rounded-full font-semibold">CONTACT US</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/services_5.jpg" alt="Ethical Hacking" class="w-full h-60 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Resume Building Services
+                        </h2>
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="https://wa.me/+919550773888"><button class="bg-blue-500 text-white text-sm px-4 py-2 rounded-full font-semibold">CONTACT US</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/services_6.jpg" alt="Ethical Hacking" class="w-full h-60 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Consultancy Services
+                        </h2>
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="https://wa.me/+919550773888"><button class="bg-blue-500 text-white text-sm px-4 py-2 rounded-full font-semibold">CONTACT US</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/services_7.jpg" alt="Ethical Hacking" class="w-full h-60 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Man Power Supply Services
+                        </h2>
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="https://wa.me/+919550773888"><button class="bg-blue-500 text-white text-sm px-4 py-2 rounded-full font-semibold">CONTACT US</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden flex flex-col">
+  
+                    <!-- Card Image -->
+                    <img src="assets/media/services_8.jpg" alt="Ethical Hacking" class="w-full h-60 object-cover" />
+
+                    <!-- Card Body -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h2 class="text-xl font-bold text-center text-black mb-7">
+                        Edu Tech Services
+                        </h2>
+                        <!-- Buttons -->
+                        <div class="mt-auto flex justify-center gap-4">
+                            <a href="https://wa.me/+919550773888"><button class="bg-blue-500 text-white text-sm px-4 py-2 rounded-full font-semibold">CONTACT US</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!--footer-->
+        <footer>
+            <hr class="mt-7 border-gray-700">
+            <p class="text-white tracking-wider uppercase font-semibold text-sm text-center py-5">Copyright © 2026 <a href="index.html" class="text-amber-500"> SSB TRAINING AND PLACEMENT PVT LTD</a> All Rights Reserved.</p>
+        </footer>
+        
+    </section>
+
+    <!--script-->
+    <script src="assets/js/menu.js"></script>
+
+</body>
+</html>
